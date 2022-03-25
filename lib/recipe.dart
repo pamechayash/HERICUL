@@ -3,6 +3,7 @@ import 'dart:ui';
 // import 'package:url_launcher/link.dart';
 // import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/link.dart';
 
 import 'order.dart';
 class Recipe extends StatelessWidget {
@@ -20,6 +21,7 @@ class Recipe extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
           child: Row(
             children: [
               Text(title,
@@ -32,11 +34,14 @@ class Recipe extends StatelessWidget {
 
               ),
               SizedBox(width: w*0.1,),
-              RaisedButton(onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>order()));
-              },
-              child: Text("OrderNow"),
-                color: Colors.blueGrey,
+              Link(
+                  target: LinkTarget.blank,
+                  uri: Uri.parse("https://www.swiggy.com/"), builder: (context,followLink) {
+                return RaisedButton(onPressed: followLink,
+                  child: Text("Order"),
+
+                );
+              }
               )
             ],
           ),
