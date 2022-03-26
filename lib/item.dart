@@ -12,7 +12,7 @@ class Item extends StatelessWidget {
       padding: const EdgeInsets.all(20.0),
       child: Container(
 
-        height: h*0.3,
+        height: h*0.1,
         width: w,
         decoration: BoxDecoration(
           color: Colors.black,
@@ -30,7 +30,7 @@ class Item extends StatelessWidget {
             fit:StackFit.expand,
             children: [
               Image(image: AssetImage(image),
-              fit:BoxFit.cover,
+              fit:BoxFit.fitWidth,
               ),
               Padding(
                 padding: const EdgeInsets.all(15.0),
@@ -41,7 +41,7 @@ class Item extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
-                    fontSize: w*0.07,
+                    fontSize: w*0.04,
                   ),
                 ),
               ),

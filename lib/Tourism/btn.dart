@@ -25,7 +25,7 @@ class btn extends StatelessWidget {
         child: Text(name,
          style: TextStyle(
            fontWeight: FontWeight.bold,
-           fontSize: h*0.1*0.3
+
          ),
 
          textAlign: TextAlign.center,

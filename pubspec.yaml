@@ -34,6 +34,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  url_launcher: ^6.0.20
+
+
 
 
 
@@ -113,6 +116,14 @@ flutter:
     - img4.png
     - ldr.jpg
     - order.jpg
+    - gob.png
+    - ix.png
+    - mmt.png
+    - login.png
+    - register.png
+    - clear.png
+    - red.png
+    - yatra.png
 
 
 

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hericul/Avatar.dart';
+import 'package:url_launcher/link.dart';
 
 class festcont extends StatefulWidget {
    String nm1;
@@ -31,6 +33,7 @@ class _festcontState extends State<festcont> {
     var h=MediaQuery.of(context).size.height;
     var w=MediaQuery.of(context).size.width;
     return Scaffold(
+
       body: SingleChildScrollView(
         child: Stack(
           children: [

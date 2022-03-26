@@ -63,7 +63,7 @@ class _FestivalSState extends State<FestivalS> {
                   )));
 
                }),
-               SizedBox(width: w*0.02,),
+               SizedBox(width: w*0.05,),
                Avatar("nav.png","Gujrati",()async{
                  setState(() {
                    image2="smile.jpg";
@@ -80,7 +80,7 @@ class _FestivalSState extends State<FestivalS> {
                    "\n\nDesc- Also known as Kutch Festival is one of the famous festivals of Gujarat that is organized by Gujarat tourism. It is the festival which attracts most of the tourism of Gujrat. The festival reflects the Gujarati folk culture in its purest form.\n\n Time-3 months(November to February)\n\nPlace-Rann of Kutch, Gujrat",
                    "\n\nDesc- the kite festival of Gujrat. The festival marks the day when winter recedes to summer. It is a sign for the farmers that the harvest season is on its way.\n\nTime-14 January every year\n\nPlace-Gujrat",)));
                }),
-               SizedBox(width: w*0.02,),
+               SizedBox(width: w*0.05,),
                Avatar("Durga.png","Bangali",()async{
                  setState(() {
                    image3="smile.jpg";
@@ -97,7 +97,7 @@ class _FestivalSState extends State<FestivalS> {
                    "\n\nDesc-Kali Puja festival is celebrated in the honor of Goddess Kali.  It is recognized by the chanting of mantras in the nighttime that goes till dawn.  Devotees offer several types of offerings to the Goddess that includes sweets, lentils, and rice.\n\nTime-october/November\n\nPlace-west bangal",
                    "\n\nDesc- Chhath Puja is a primitive Hindu festival. Only Vedic festival that is dedicated to the ChhathiMaiya and Surya Dev. Chhath Puja is celebrated to seek blessings of the sun god for sustaining life on earth. Lord Surya also blesses the worshiper’s family, friends, and elders by ensuring longevity and prosperity of them.\n\nTime-on the month of Kartik Shukla Shasht(November/December).\n\nPlace- mostly in bihar west bangal , Jharkhand",)));
                }),
-               SizedBox(width: w*0.02,),
+               SizedBox(width: w*0.05,),
                Avatar("pushkar.png","Rajesthani",()async{
                  setState(() {
                    image4="smile.jpg";

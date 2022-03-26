@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hericul/Clothing.dart';
 import 'package:hericul/dance.dart';
+import 'package:url_launcher/link.dart';
 
 import 'FestivalS.dart';
 import 'Food.dart';
@@ -30,18 +32,24 @@ class _MyHomePageState extends State<MyHomePage> {
           scrollDirection: Axis.horizontal,
           child: Row(
              children: [
-               Center(
-                 child: Text("Select Your Interest",
-                 style: TextStyle(
-                   fontSize: 25,
-                   color: Colors.white,
-                   fontWeight: FontWeight.bold,
 
+               Link(
+                   target: LinkTarget.blank,
+                   uri: Uri.parse("https://alokp1234.github.io/hericul/#cta"), builder: (context,followLink) {
+                 return  ElevatedButton(onPressed: followLink,
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.lightGreen),
+                    ),
+                   child: Text("SHOP TO BE MULTICULTURAL",
+                   style: TextStyle(
+                     color: Colors.white
+                   ),
+                   ),
 
-                 ),
-
-                 ),
+                 );
+               }
                ),
+
 
              ],
            ),

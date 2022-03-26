@@ -26,6 +26,8 @@ class _foodS2State extends State<foodS2> {
           )
       ),
       body: GridView.count(crossAxisCount: 2,
+
+
         children: <Widget>[
           getCard("imgs.png","khaman",
               "You don’t have to be from Gujarat to have tasted a khaman dhokla. A thick fermented gram flour and yogurt batter steamed till it’s like a soft fluffy pillow. Cooled, cut into squares tempered with mustard seeds and garnished with fresh coriander and scraped coconut – a dhokla is Gujarat’s pride. ",

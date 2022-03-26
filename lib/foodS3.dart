@@ -23,6 +23,7 @@ class _foodS3State extends State<foodS3> {
                 fontSize: w * 0.04,
               ))),
       body: GridView.count(
+
         crossAxisCount: 2,
         children: <Widget>[
           getCard(

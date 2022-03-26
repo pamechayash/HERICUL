@@ -17,31 +17,33 @@ var w= MediaQuery.of(context).size.width;
       Column(
         children: [
           Padding(
+            padding: EdgeInsets.fromLTRB(0, 10, 0,0),
+            child: Column(
+              children: [
+                FittedBox(
 
-            padding: const EdgeInsets.fromLTRB(0, 10,0,0),
-            child: Container(
-              height:  size.height*0.2,
-              width:  size.width*0.3,
 
-              child: FittedBox(
-                child: FloatingActionButton(onPressed: Action,
+                  child: FloatingActionButton(onPressed: Action,
 
-                    child: CircleAvatar(
+                      child: CircleAvatar(
 
-                      radius: w*0.3,
-                      backgroundImage: AssetImage(
-                          image
+                        radius: w*0.3,
+                        backgroundImage: AssetImage(
+                            image
+                        ),
                       ),
-                    ),
 
+                  ),
                 ),
-              ),
+                Text(text,style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: w*0.05,
+                ),)
+              ],
             ),
           ),
-    Text(text,style: TextStyle(
-      color: Colors.white,
-    fontWeight: FontWeight.bold
-    ),)
+
         ],
       );
         CircleAvatar(
