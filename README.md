@@ -1,6 +1,7 @@
 # hericul
 
 A new Flutter project.
+MORE UI FOCUSED
 
 ## Getting Started
 
